@@ -2,7 +2,6 @@ import { View } from '@tarojs/components'
 import { useLoad } from '@tarojs/taro'
 import { useState } from 'react'
 import './index.less'
-// import { accMul, accAdd, accSub, accDiv } from '@/utils/index'
 
 export default function Index() {
   const [obj, setObj] = useState({clientX: 100, clientY: 100});
@@ -41,11 +40,9 @@ export default function Index() {
 
   const onTouchMove = (e: any) => {
     compute(e.touches[0].clientX, e.touches[0].clientY,)
-    // console.log(e)
   }
 
-  const onTouchEnd = (e) => {
-    // console.log('onTouchEnd', e);
+  const onTouchEnd = () => {
     setObj({clientX: 100, clientY: 100})
     setAngle(0);
   }
