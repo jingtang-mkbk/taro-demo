@@ -59,6 +59,8 @@
     let div2 = document.querySelector('.div2')
     let r = 25		//摇杆的半径
     let r2 = 100	//底盘的半径
+    console.log('div2.offsetLeft', div2.offsetLeft)
+    console.log('div2.offsetTop', div2.offsetTop)
     let x = div2.offsetLeft + r		//加上r半径的偏移到中心
     let y = div2.offsetTop + r
     div3.ontouchmove = (e) => {
@@ -70,7 +72,7 @@
       let radin = Math.atan2(t.pageY - y, t.pageX - x)
       const xOffset = Math.cos(radin) * d
       const yOffset = Math.sin(radin) * d
-      let  = x + xOffset
+      let vx = x + xOffset
       let vy = y + yOffset
       // console.log(Math.cos(radin) * d, Math.sin(radin) * d)
       // if (xOffset > 0 && yOffset < 0) {

@@ -1,24 +1,37 @@
-.angle {
-  height: 50px;
-  width: 100%;
+.top {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .angle {
+    height: 50px;
+  }
 }
 
-.container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  border-radius: 50%;
-  background-color: rgba(227, 220, 220, 0.9);
-  // margin-left: 175px;
 
-  .joystick {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    // 手机端-75  电脑测试-50
-    margin-top: -75px;
-    margin-left: -75px;
+.box {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 400px;
+    height: 400px;
+    position: relative;
     border-radius: 50%;
-    background-color: white;
+    background-color: rgba(227, 220, 220, 0.9);
+    // margin-left: 175px;
+
+    .joystick {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      margin-top: -50px;
+      margin-left: -50px;
+      border-radius: 50%;
+      background-color: white;
+    }
   }
+
 }
